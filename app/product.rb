@@ -13,6 +13,18 @@ class Product
     Product.new(price: 11.23, name: 'Coffee', code: 'CF1')
   end
 
+  def tea?
+    code == 'FR1'
+  end
+
+  def apple?
+    code == 'AP1'
+  end
+
+  def coffee?
+    code == 'CF1'
+  end
+
   def initialize(price: 0.0, name: '', code: '')
     self.price = price
     self.name  = name

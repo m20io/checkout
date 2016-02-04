@@ -2,7 +2,7 @@ require 'forwardable'
 
 class PriceDecorator
   extend Forwardable
-  def_delegator :@decorated_product, :name, :code
+  def_delegators :@decorated_product, :name, :code, :tea?, :apple?, :coffee?
 
   def initialize(product:, price:)
     @decorated_product = product
